@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<AnchorPane fx:id="mainPanel" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+            prefHeight="199.0" prefWidth="392.0" styleClass="anchorPane" xmlns="http://javafx.com/javafx/8.0.40"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controllers.SettingController">
+    <children>
+        <ComboBox fx:id="keyComboBox" depthTest="ENABLE" layoutX="32.0" layoutY="81.0" nodeOrientation="LEFT_TO_RIGHT"
+                  onAction="#createComboBoxLayout" prefHeight="25.0" prefWidth="337.0"
+                  promptText="How create the key?"/>
+        <Button layoutX="33.0" layoutY="156.0" mnemonicParsing="false" onAction="#saveChanges" prefHeight="25.0"
+                prefWidth="166.0" text="Ok"/>
+        <Button cancelButton="true" layoutX="220.0" layoutY="156.0" mnemonicParsing="false" onAction="#cencel"
+                prefHeight="25.0" prefWidth="149.0" text="Cancel"/>
+        <RadioButton fx:id="encryption_RadioButton" layoutX="174.0" layoutY="49.0" mnemonicParsing="false"
+                     selected="true" text="encryption">
+            <toggleGroup>
+                <ToggleGroup fx:id="Operation"/>
+            </toggleGroup>
+        </RadioButton>
+        <RadioButton fx:id="decryptionRadioButton" layoutX="292.0" layoutY="49.0" mnemonicParsing="false"
+                     text="decryption" toggleGroup="$Operation"/>
+        <Label layoutX="33.0" layoutY="20.0" text="Choose the algorythm:"/>
+        <Label layoutX="32.0" layoutY="49.0" text="Choose operation:"/>
+        <TextField fx:id="inputDataTextfield" layoutX="150.0" layoutY="123.0"/>
+        <Label fx:id="typeOfKeyInputLabel" layoutX="33.0" layoutY="127.0"/>
+        <Button fx:id="searchBtn" layoutX="301.0" layoutY="123.0" mnemonicParsing="false" onAction="#searchFile"
+                prefHeight="25.0" prefWidth="66.0" text="search"/>
+        <ComboBox fx:id="algorythmCombobox" layoutX="195.0" layoutY="16.0" prefHeight="25.0" prefWidth="173.0"
+                  promptText="Choose the algorythm"/>
+    </children>
+</AnchorPane>

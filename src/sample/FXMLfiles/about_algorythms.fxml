@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.layout.AnchorPane?>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="120.0"
+            prefWidth="142.0" styleClass="anchorPane" xmlns="http://javafx.com/javafx/8.0.40"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controllers.AboutAlgorythmsController">
+    <children>
+        <Hyperlink id="XOR" fx:id="XORLink" layoutX="21.0" layoutY="14.0" onAction="#xorPress" styleClass="hyperLinks"
+                   text="XOR"/>
+        <Hyperlink layoutX="21.0" layoutY="37.0" onAction="#salsa20Press" styleClass="hyperLinks" text="Salsa20"/>
+        <Hyperlink layoutX="24.0" layoutY="61.0" onAction="#RC4Press" styleClass="hyperLinks" text="RC4"/>
+        <Hyperlink layoutX="24.0" layoutY="84.0" onAction="#RabbitPress" styleClass="hyperLinks" text="Rabbit"/>
+    </children>
+</AnchorPane>

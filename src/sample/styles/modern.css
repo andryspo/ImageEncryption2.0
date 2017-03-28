@@ -1,0 +1,120 @@
+.anchorPane {
+    -fx-background-color: linear-gradient(#686868 0%, #232723 25%, #373837 75%, #757575 100%),
+    linear-gradient(#020b02, #3a3a3a),
+    linear-gradient(#9d9e9d 0%, #6b6a6b 20%, #343534 80%, #242424 100%),
+    linear-gradient(#8a8a8a 0%, #6b6a6b 20%, #343534 80%, #262626 100%),
+    linear-gradient(#777777 0%, #606060 50%, #505250 51%, #2a2b2a 100%);
+    -fx-background-insets: 0, 1, 4, 5, 6;
+    -fx-background-radius: 9, 8, 5, 4, 3;
+
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+    -fx-effect: dropshadow(three-pass-box, rgba(255, 255, 255, 0.2),
+    1, 0.0, 0, 1)
+}
+
+.hyperlink {
+    -fx-text-fill: #4aff87;
+}
+
+.infoPane.label {
+    -fx-text-fill: black;
+}
+
+.label {
+    -fx-text-fill: white;
+}
+
+.imagesPanel {
+    -fx-background-color: linear-gradient(#433968 0%, #271026 25%, #1a0f38 75%, #491368 100%),
+    linear-gradient(#1a0f38, #37063a),
+    linear-gradient(#bb39ff 0%, #82198c 20%, #311035 80%, #242424 100%),
+    linear-gradient(#bb39ff 0%, #6b1b56 20%, #82198c 80%, #311035 100%),
+    linear-gradient(#bb39ff 0%, #82198c 50%, #311035 51%, #271026 100%);
+    -fx-background-insets: 0, 1, 4, 5, 6;
+    -fx-background-radius: 9, 8, 5, 4, 3;
+
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+    -fx-effect: dropshadow(three-pass-box, rgba(255, 255, 255, 0.2),
+    1, 0.0, 0, 1)
+}
+
+.borderPane {
+    -fx-backgtound: white;
+    -fx-border-color: red;
+    -fx-border-width: 3px;
+
+}
+
+.imageView {
+    -fx-backgtound: white;
+}
+
+.scroll-bar {
+    -fx-block-increment: 100px;
+    -fx-unit-increment: 1px;
+
+}
+
+.button {
+    -fx-background-color: #000000,
+    linear-gradient(#7ebcea, #2f4b8f),
+    linear-gradient(#426ab7, #263e75),
+    linear-gradient(#395cab, #223768);
+    -fx-background-insets: 0, 1, 2, 3;
+    -fx-background-radius: 3, 2, 2, 2;
+
+    -fx-text-fill: white;
+    -fx-font-size: 12px;
+}
+
+.button:hover {
+    -fx-background-color: #000000,
+    linear-gradient(#5deabb, #238f1f),
+    linear-gradient(#3db7a4, #297546),
+    linear-gradient(#00ab76, #316852);
+
+}
+
+.menu-bar {
+    -fx-background-color: #6b3b94;
+    -fx-border-color: #089ff0;
+
+}
+
+.menu-bar .label {
+
+    -fx-font-family: "Segoe UI Light";
+    -fx-text-fill: white;
+
+}
+
+.menu:hover {
+    -fx-background-color: #00bc20;
+}
+
+.hyperLinks {
+    -fx-color: red;
+}
+
+.infoPane.label {
+    -fx-text-fill: black;
+
+}
+
+.menu-item .label {
+
+    -fx-label-line-length: 8;
+
+    -fx-text-fill: black;
+}
+
+.scroll-bar .increment-button {
+
+    -fx-color: green;
+
+}
+

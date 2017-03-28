@@ -1,0 +1,99 @@
+.anchorPane {
+    -fx-background-color: linear-gradient(#a3ef1d 0%, #c3eb0a 25%, #dd9c30 75%, #ffce23 100%),
+    linear-gradient(#a1aa2d, #a5931e),
+    linear-gradient(#7ef417 0%, #a3d81e 20%, #c78d35 80%, #d3a322 100%),
+    linear-gradient(#6ee418 0%, #affb1e 20%, #72fba8 80%, #75f7ce 100%),
+    linear-gradient(#c3eb0a 0%, #c3eb0a 50%, #a3ef1d 51%, #a3d81e 100%);
+    -fx-background-insets: 0, 1, 4, 5, 6;
+    -fx-background-radius: 9, 8, 5, 4, 3;
+
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-text-fill: black;
+    -fx-effect: dropshadow(three-pass-box, rgba(255, 255, 255, 0.2),
+    1, 0.0, 0, 1)
+}
+
+.imagesPanel {
+    -fx-background-color: linear-gradient(#433968 0%, #271026 25%, #1a0f38 75%, #491368 100%),
+    linear-gradient(#1a0f38, #37063a),
+    linear-gradient(#bb39ff 0%, #82198c 20%, #311035 80%, #242424 100%),
+    linear-gradient(#bb39ff 0%, #6b1b56 20%, #82198c 80%, #311035 100%),
+    linear-gradient(#ff8d58 0%, #8c5918 50%, #ff2f2c 51%, #271909 100%);
+    -fx-background-insets: 0, 1, 4, 5, 6;
+    -fx-background-radius: 9, 8, 5, 4, 3;
+
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+    -fx-effect: dropshadow(three-pass-box, rgba(255, 255, 255, 0.2),
+    1, 0.0, 0, 1)
+}
+
+.borderPane {
+    -fx-backgtound: white;
+    -fx-border-color: red;
+    -fx-border-width: 3px;
+
+}
+
+.imageView {
+    -fx-backgtound: white;
+}
+
+.scroll-bar {
+    -fx-block-increment: 100px;
+    -fx-unit-increment: 1px;
+
+}
+
+.button {
+    -fx-background-color: #000000,
+    linear-gradient(#c9ea2a, #258f18),
+    linear-gradient(#7eb715, #257516),
+    linear-gradient(#27ab13, #20a83c);
+    -fx-background-insets: 0, 1, 2, 3;
+    -fx-background-radius: 3, 2, 2, 2;
+
+    -fx-text-fill: black;
+    -fx-font-size: 12px;
+}
+
+.button:hover {
+    -fx-background-color: #000000,
+    linear-gradient(#5deabb, #238f1f),
+    linear-gradient(#3db7a4, #297546),
+    linear-gradient(#00ab76, #316852);
+
+}
+
+.menu-bar {
+    -fx-background-color: #c78d35;
+    -fx-border-color: #f01c17;
+
+}
+
+.menu-bar .label {
+
+    -fx-font-family: "Segoe UI Light";
+    -fx-text-fill: white;
+
+}
+
+.menu:hover {
+    -fx-background-color: #00bc20;
+}
+
+.menu-item .label {
+
+    -fx-label-line-length: 8;
+
+    -fx-text-fill: black;
+}
+
+.scroll-bar .increment-button {
+
+    -fx-color: green;
+
+}
+

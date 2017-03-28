@@ -2,11 +2,16 @@
 
 # Mobile Tools for Java (J2ME)
 .mtj.tmp/
-
+.idea
+out
 # Package Files #
 *.jar
 *.war
 *.ear
+ImageEncryption 2.0.iml
+imageencryption_2.0.properties
+imageencryption_2.0.xml
+module_imageencryption_2.0.xml
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*

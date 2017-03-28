@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="210.0"
+            prefWidth="443.0" styleClass="anchorPane" xmlns="http://javafx.com/javafx/8.0.40"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controllers.SaveAllResultController">
+    <children>
+        <VBox layoutX="20.0" layoutY="21.0" prefHeight="181.0" prefWidth="359.0" styleClass="anchorPane">
+            <children>
+                <HBox prefHeight="34.0" prefWidth="328.0" styleClass="anchorPane">
+                    <children>
+                        <Label prefHeight="17.0" prefWidth="105.0" text="Prefix:    "/>
+                        <TextField fx:id="TextFieldSavePicture" prefHeight="25.0" prefWidth="154.0" text="D:\temp"
+                                   translateX="20.0"/>
+                        <Button lineSpacing="2.0" mnemonicParsing="false" onAction="#searchPicture" prefHeight="25.0"
+                                prefWidth="76.0" text="Search" translateX="30.0"/>
+                    </children>
+                </HBox>
+                <HBox prefHeight="48.0" prefWidth="374.0" styleClass="anchorPane">
+                    <children>
+                        <Label prefHeight="17.0" prefWidth="105.0" text="Save key:       ">
+                            <HBox.margin>
+                                <Insets top="8.0"/>
+                            </HBox.margin>
+                        </Label>
+                        <TextField fx:id="TextFieldSaveKey" prefHeight="25.0" prefWidth="154.0" text="D:\key.txt"
+                                   translateX="20.0">
+                            <HBox.margin>
+                                <Insets top="8.0"/>
+                            </HBox.margin>
+                        </TextField>
+                        <Button lineSpacing="2.0" mnemonicParsing="false" onAction="#searchKey" prefHeight="25.0"
+                                prefWidth="79.0" text="Search" translateX="30.0">
+                            <HBox.margin>
+                                <Insets top="8.0"/>
+                            </HBox.margin>
+                        </Button>
+                    </children>
+                </HBox>
+                <HBox prefHeight="48.0" prefWidth="417.0" styleClass="anchorPane">
+                    <children>
+                        <Label prefHeight="17.0" prefWidth="125.0" text="additional info:   "/>
+                        <TextField fx:id="TextFieldSaveInfo" prefHeight="25.0" prefWidth="156.0" text="D:\readme.txt"/>
+                        <Button lineSpacing="2.0" mnemonicParsing="false" onAction="#searchInfo" prefHeight="25.0"
+                                prefWidth="80.0" text="Search" translateX="10.0">
+                            <opaqueInsets>
+                                <Insets right="123.0"/>
+                            </opaqueInsets>
+                        </Button>
+                    </children>
+                </HBox>
+                <HBox prefHeight="49.0" prefWidth="317.0" styleClass="anchorPane">
+                    <children>
+                        <Button lineSpacing="2.0" mnemonicParsing="false" onAction="#save" prefHeight="25.0"
+                                prefWidth="173.0" text="Save"/>
+                        <Button lineSpacing="2.0" mnemonicParsing="false" onAction="#cancel" prefHeight="25.0"
+                                prefWidth="166.0" text="Cancel" translateX="30.0"/>
+                    </children>
+                </HBox>
+            </children>
+        </VBox>
+    </children>
+</AnchorPane>

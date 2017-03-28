@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0"
+            prefWidth="600.0" styleClass="anchoePane" xmlns="http://javafx.com/javafx/8.0.40"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controllers.ShowerCurrentResultController">
+    <children>
+        <TabPane layoutX="14.0" layoutY="14.0" prefHeight="371.0" prefWidth="572.0" styleClass="anchorPane"
+                 tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="14.0"
+                 AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="14.0">
+            <tabs>
+                <Tab text="Images">
+                    <content>
+                        <AnchorPane prefHeight="200.0" prefWidth="200.0" styleClass="anchorPane">
+                            <children>
+                                <ScrollPane fx:id="imagesCBox_" layoutX="4.0" layoutY="6.0" prefHeight="331.0"
+                                            prefWidth="564.0" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="4.0"
+                                            AnchorPane.rightAnchor="4.0" AnchorPane.topAnchor="6.0"/>
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </Tab>
+                <Tab styleClass="infoPane" text="Info">
+                    <content>
+                        <AnchorPane prefHeight="200.0" prefWidth="200.0" styleClass="anchorPane">
+                            <children>
+                                <Label fx:id="LabelAlgorythm_" layoutX="14.0" layoutY="22.0" prefHeight="17.0"
+                                       prefWidth="232.0" text="Algorythm:" AnchorPane.bottomAnchor="303.0"
+                                       AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="326.0"
+                                       AnchorPane.topAnchor="22.0"/>
+                                <Label layoutX="14.0" layoutY="49.0" text="Key:"/>
+                                <TextArea fx:id="TextAreaKey_" layoutX="14.0" layoutY="73.0" prefHeight="239.0"
+                                          prefWidth="534.0" AnchorPane.bottomAnchor="30.0" AnchorPane.leftAnchor="14.0"
+                                          AnchorPane.rightAnchor="24.0" AnchorPane.topAnchor="73.0"/>
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </Tab>
+            </tabs>
+        </TabPane>
+    </children>
+</AnchorPane>

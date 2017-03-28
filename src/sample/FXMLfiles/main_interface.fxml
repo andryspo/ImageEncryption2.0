@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<AnchorPane fx:id="mainPanel" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+            prefHeight="550.0" prefWidth="620.0" styleClass="anchorPane" xmlns="http://javafx.com/javafx/8.0.40"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controllers.MainController">
+    <children>
+        <ScrollPane fx:id="mainImagesPanel" layoutX="58.0" layoutY="34.0" prefHeight="130.0" prefWidth="504.0"
+                    styleClass="imagesPanel" stylesheets="@../styles/modern.css" AnchorPane.leftAnchor="58.0"
+                    AnchorPane.rightAnchor="58.0">
+            <content>
+                <AnchorPane fx:id="imagesPanel" minHeight="0.0" minWidth="0.0" prefHeight="85.0" prefWidth="0.0"
+                            styleClass="anchorPane"/>
+            </content>
+        </ScrollPane>
+        <Button id="addBtn" layoutX="42.0" layoutY="166.0" mnemonicParsing="false" onAction="#add" prefHeight="25.0"
+                prefWidth="254.0" text="add" AnchorPane.leftAnchor="40.0"/>
+        <Button layoutX="14.0" layoutY="53.0" mnemonicParsing="false" onAction="#scrollLeft" prefHeight="92.0"
+                prefWidth="40.0" text="&lt;" AnchorPane.leftAnchor="14.0">
+            <font>
+                <Font name="Times New Roman Bold" size="20.0"/>
+            </font>
+        </Button>
+        <Button layoutX="566.0" layoutY="53.0" mnemonicParsing="false" onMousePressed="#scrollRight" prefHeight="92.0"
+                prefWidth="40.0" text="&gt;" AnchorPane.rightAnchor="14.0"/>
+        <ImageView fx:id="previusImg" fitHeight="250.0" fitWidth="250.0" layoutX="186.0" layoutY="203.0"
+                   pickOnBounds="true" preserveRatio="true"/>
+        <Button layoutX="314.0" layoutY="166.0" mnemonicParsing="false" onAction="#removePictures" prefHeight="25.0"
+                prefWidth="254.0" text="remove" AnchorPane.rightAnchor="40.0"/>
+        <MenuBar layoutX="4.0" layoutY="2.0" prefHeight="32.0" prefWidth="285.0">
+            <menus>
+                <Menu mnemonicParsing="false" text="File">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#addImage" text="add"/>
+                        <MenuItem mnemonicParsing="false" onAction="#saveSelected" text="Save selected"/>
+                        <MenuItem mnemonicParsing="false" onAction="#saveAllOperated" text="Save all operated"/>
+                        <MenuItem mnemonicParsing="false" onAction="#deleteSelectedImage" text="delete selected"/>
+                        <MenuItem fx:id="deleteAllImages" mnemonicParsing="false" onAction="#deleteAllImages"
+                                  text="delete all"/>
+                        <MenuItem mnemonicParsing="false" onAction="#closeProgram" text="close"/>
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Settings">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#setSetting" text="Algorythms settings"/>
+                        <MenuItem mnemonicParsing="false" onAction="#changeTheme" text="Theme"/>
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Run">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#operateCurrent" text="operate current"/>
+                        <MenuItem mnemonicParsing="false" onAction="#operateAll" text="operate all"/>
+                        <MenuItem mnemonicParsing="false" onAction="#encryptCurrent" text="encrypt current"/>
+                        <MenuItem mnemonicParsing="false" onAction="#decryptCurrent" text="decrypt current"/>
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="View">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#currentRsult" text="Current results"/>
+                        <MenuItem mnemonicParsing="false" onAction="#showAllResult" text="All results"/>
+                        <MenuItem mnemonicParsing="false" onAction="#swap" text="swap"/>
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Help">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#about" text="About"/>
+                        <MenuItem mnemonicParsing="false" onAction="#help" text="Help"/>
+                    </items>
+                </Menu>
+            </menus>
+        </MenuBar>
+        <Button fx:id="run" layoutX="40.0" layoutY="469.0" mnemonicParsing="false" onAction="#encrypt" prefHeight="45.0"
+                prefWidth="221.0" text="Encrypt" AnchorPane.leftAnchor="40.0" AnchorPane.rightAnchor="359.0"/>
+        <Button fx:id="decrypt" layoutX="365.0" layoutY="469.0" mnemonicParsing="false" onAction="#decrypt"
+                prefHeight="45.0" prefWidth="221.0" text="Decrypt"/>
+        <Button layoutX="287.0" layoutY="469.0" mnemonicParsing="false" onAction="#swap" prefHeight="45.0"
+                prefWidth="47.0" text="&lt;&gt;"/>
+    </children>
+</AnchorPane>
